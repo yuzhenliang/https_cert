@@ -4,8 +4,6 @@
 
 该脚本可以通过输入节点VIP（支持一次输入多个VIP）自动检查该节点所有SLB设备的指定域名证书是否正常。
 
- 
-
 ## **二、** **准备工作**
 
 1. 安装python依赖包
@@ -17,8 +15,6 @@
    需要登录117.128.7.227执行如下命令：
 
    ```salt '*' network.ip_addrs lo --out-file=/tmp/vip.yaml --out=yaml```
-
- 
 
 ## **三、** **使用方法**
 
@@ -36,16 +32,16 @@
 
 序列号获取方法如下：
 
-1. 修改hosts文件，将测试域名强制解析至证书正确节点；
+> 1. 修改hosts文件，将测试域名强制解析至证书正确节点；
 
-2. 使用浏览器打开测试域名的一个资源，依图示点击；
+> 2. 使用浏览器打开测试域名的一个资源，依图示点击；
 
-![img](file:////Users/yuzhenliang/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)
+![img](file:////Users/yuzhenliang/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)> 
 
-3. 依图示步骤，查看证书，获取序列号。
+> 3. 依图示步骤，查看证书，获取序列号。
 
-![img](file:////Users/yuzhenliang/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)
+![img](file:////Users/yuzhenliang/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png)>
 
-d)   运行main.py，按照提示输入节点VIP。如下所示：
+4. 运行main.py，按照提示输入节点VIP。如下所示：
 
 ![img](file:////Users/yuzhenliang/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png)
